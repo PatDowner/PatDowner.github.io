@@ -85,30 +85,30 @@
     </div>
   </div> -->
 
-    <div class="row row-cols-1 row-cols-sm-3">
-      <div class="col mb-4">
-        <div class="card">
-          <!-- card image --- eventually, perhaps add link around img tag to make image clickable to bring to actual product??-->
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU" class="card-img-top folioimage" alt="...">
+  <div class="row row-cols-1 row-cols-sm-3">
+    <!-- first card -->
+    <div class="col mb-4">
+      <div class="card">
+        
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <!-- card image --- eventually, perhaps add link around img tag to make image clickable to bring to actual product??-->
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU" class="card-img-top folioimage" alt="...">
+                    Project 1
+                  </button>
+                </h2>
+              </div>
           
-          <div class="card-body">
-            <!-- start of accordion section -->
-            <div class="accordion" id="accordionExample">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      Project 1
-                    </button>
-                  </h2>
-                </div>
-            
-                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
+              <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
                 </div>
               </div>
             </div>
@@ -117,6 +117,40 @@
       </div>
     </div>
 
+    <!-- second card -->
+    <div class="col mb-4">
+      <div class="card">
+        
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <!-- card image --- eventually, perhaps add link around img tag to make image clickable to bring to actual product??-->
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU"
+                    class="card-img-top folioimage" alt="...">
+                    Project 2
+                  </button>
+                </h2>
+              </div>
+  
+              <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon
+                  officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- JavaScript plugins from Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
