@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-  <!-- Project-specific stylesheet -->
-  <link rel="stylesheet" href="./assets/css/style_index.css">
+  <!-- page-specific stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style_portfolio.css">
 </head>
 
 <body>
+  <!-- nav bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="./index.html">Pat Downer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -39,7 +40,82 @@
     </div>
   </nav>
 
-  <p>portfolio</p>
+  <!-- need to build out a real header -->
+  <h1>portfolio</h1>
+
+  <!-- Portfolio items. I'm going to try to make an accordion collapsible list WITH a picture. LOL...ambitious much?! -->
+
+  <!-- empty accordion -->
+  <!-- <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Project 1
+            <img src="" alt="">
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+          haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- empty card -->
+  <!-- <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="row row-cols-1 row-cols-sm-3">
+      <div class="col mb-4">
+        <div class="card">
+          <!-- card image --- eventually, perhaps add link around img tag to make image clickable to bring to actual product??-->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU" class="card-img-top folioimage" alt="...">
+          
+          <div class="card-body">
+            <!-- start of accordion section -->
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Project 1
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+                    officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- JavaScript plugins from Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
