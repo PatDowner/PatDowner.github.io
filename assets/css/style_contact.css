@@ -28,3 +28,14 @@
   background-color: black;
   opacity: .25;
 }
+
+.container {
+  margin: 20px;;
+  background-color:  rgba(0, 174, 197, 0.109);
+  padding: 25px;
+}
+
+.nameform {
+     padding: 0px 10px 0px 0px;
+     margin: 0px;
+}
