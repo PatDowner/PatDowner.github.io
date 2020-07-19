@@ -19,7 +19,7 @@
 
 <body>
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="./index.html">Pat Downer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,53 +43,11 @@
   <!-- need to build out a real header -->
   <h1>portfolio</h1>
 
-  <!-- Portfolio items. I'm going to try to make an accordion collapsible list WITH a picture. LOL...ambitious much?! -->
-
-  <!-- empty accordion -->
-  <!-- <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Project 1
-            <img src="" alt="">
-          </button>
-        </h2>
-      </div>
-  
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- empty card -->
-  <!-- <div class="row row-cols-1 row-cols-md-3">
+    <div class="row row-cols-1 row-cols-sm-3">
+    
+      <!-- first card -->
+      <!-- Why does this one close when others are clicked, butthat doesn't happen with any of the rest of them?!!! Is it possible that there's something diffrent in THEIR css?? -->
     <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <div class="row row-cols-1 row-cols-sm-3">
-    <!-- first card -->
-    <div class="col mb-4">
-      <div class="card">
-        
         <div class="card-body">
           <!-- start of accordion section -->
           <div class="accordion" id="accordionExample">
@@ -98,7 +56,7 @@
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  <!-- card image --- eventually, perhaps add link around img tag to make image clickable to bring to actual product??-->
+                  <!-- card image -->
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU" class="card-img-top folioimage" alt="...">
                     Project 1
                   </button>
@@ -115,11 +73,10 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
     <!-- second card -->
     <div class="col mb-4">
-      <div class="card">
         
         <div class="card-body">
           <!-- start of accordion section -->
@@ -129,7 +86,7 @@
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                   data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  <!-- card image --- eventually, perhaps add link around img tag to make image clickable to bring to actual product??-->
+                  <!-- card image-->
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU"
                     class="card-img-top folioimage" alt="...">
                     Project 2
@@ -148,8 +105,142 @@
           </div>
         </div>
       </div>
+
+
+    <!-- third card -->
+    <div class="col mb-4">
+    
+      <div class="card-body">
+        <!-- start of accordion section -->
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <!-- card image-->
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU"
+                    class="card-img-top folioimage" alt="...">
+                  Project 3
+                </button>
+              </h2>
+            </div>
+    
+            <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- fourth card -->
+  <div class="col mb-4">
+  
+    <div class="card-body">
+      <!-- start of accordion section -->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <!-- card image-->
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU"
+                  class="card-img-top folioimage" alt="...">
+                Project 4
+              </button>
+            </h2>
+          </div>
+  
+          <div id="collapseFour" class="collapse hide" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon
+              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
+    <!-- fifth card -->
+    <div class="col mb-4">
+    
+      <div class="card-body">
+        <!-- start of accordion section -->
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  <!-- card image -->
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU"
+                    class="card-img-top folioimage" alt="...">
+                  Project 5
+                </button>
+              </h2>
+            </div>
+    
+            <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- sixth card -->
+  <div class="col mb-4">
+  
+    <div class="card-body">
+      <!-- start of accordion section -->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                <!-- card image-->
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbdUevhcbcgS0McSfi6rX5ylKYfSifb2a76w&usqp=CAU"
+                  class="card-img-top folioimage" alt="...">
+                Project 6
+              </button>
+            </h2>
+          </div>
+  
+          <div id="collapseSix" class="collapse hide" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon
+              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    </div>
   
   <!-- JavaScript plugins from Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
