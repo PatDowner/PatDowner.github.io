@@ -1,6 +1,6 @@
 #navpad {
-  padding: 8px 20px;
-  opacity: .9;
+     padding: 8px 20px;
+     opacity: .9;
 }
 
 /* #name {
@@ -9,22 +9,51 @@
 } */
 
 .head {
-  margin: 5px 20px;
-  margin-top: 15px;
-  padding-bottom: 5px;
-  font-size: 24px;
-  opacity: .7;
+     margin: 5px 20px;
+     margin-top: 15px;
+     padding-bottom: 5px;
+     font-size: 24px;
+     opacity: .7;
 }
 
 .active {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: goldenrod;
-  -moz-text-decoration-color: goldenrod;
-  -moz-text-decoration-style: wavy;
+     text-decoration-line: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: goldenrod;
+     -moz-text-decoration-color: goldenrod;
+     -moz-text-decoration-style: wavy;
 }
 
 .navbar-toggler {
-  background-color: black;
-  opacity: .25;
+     background-color: black;
+     opacity: .25;
+}
+
+.card-body {
+     padding: 0px;
+     background-color: rgba(0, 194, 197, 0.035);
+}
+
+.card-header {
+     padding: 0px;
+     padding-bottom: 1px;
+     background-color: rgba(0, 174, 197, 0.109);
+}
+
+.space {
+     margin: 20px 8px;
+}
+
+.card-body-btm {
+     padding: 10px;
+}
+
+.text-info {
+     font-size: 18px;
+     font-weight: 600;
+}
+
+.folioimage {
+     margin-bottom: 8px;
+     margin-top: 8px;
 }
