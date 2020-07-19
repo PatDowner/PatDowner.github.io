@@ -1,0 +1,29 @@
+#navpad {
+  padding: 8px 20px;
+  opacity: .9;
+}
+
+/* #name {
+  background-color: mediumseagreen;
+  padding: 10px 30px;
+} */
+
+.head {
+  margin: 5px 20px;
+  padding-bottom: 5px;
+  font-size: 24px;
+  opacity: .7;
+}
+
+.active {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: goldenrod;
+  -moz-text-decoration-color: goldenrod;
+  -moz-text-decoration-style: wavy;
+}
+
+.navbar-toggler {
+  background-color: black;
+  opacity: .25;
+}
