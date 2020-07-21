@@ -65,6 +65,10 @@
      width: 100%;
 }
 
+#bottom {
+     height: 35px;
+}
+
 #footer {
      height: 30px;
      border-top: 5px solid #ffc107;
