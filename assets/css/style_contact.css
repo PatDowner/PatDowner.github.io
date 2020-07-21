@@ -1,47 +1,57 @@
 /* Add some depth to nav bar and left align with content below */
+
 #navpad {
-  padding: 8px 20px;
-  opacity: .9;
+     padding: 8px 20px;
+     opacity: .9;
 }
 
 /* Sets yellow squiggly under the active link in the nav bar */
+
 .active {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: goldenrod;
-  -moz-text-decoration-color: goldenrod;
-  -moz-text-decoration-style: wavy;
+     text-decoration-line: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: goldenrod;
+     -moz-text-decoration-color: goldenrod;
+     -moz-text-decoration-style: wavy;
 }
 
 /* On smaller screens, the navbar switches to a toggle button, this sets the color of the button */
+
 .navbar-toggler {
-  background-color: black;
-  opacity: .25;
+     background-color: black;
+     opacity: .25;
 }
 
-
-
 /* Give space around the page head "Container", left align with other text, increases font size, reduced opacity to lighten color*/
+
 .head {
-  margin: 5px 20px;   
-  margin-top: 15px;
-  padding-bottom: 5px;
-  font-size: 24px;
-  opacity: .7;
-}  
-
-
+     margin: 5px 20px;
+     margin-top: 15px;
+     padding-bottom: 5px;
+     font-size: 24px;
+     opacity: .7;
+}
 
 /* Blue background fill around form */
+
 .container-sm {
-  margin: 20px;;
-  background-color:  rgba(0, 174, 197, 0.109);
-  padding: 25px;
+     margin: 20px;
+     ;
+     background-color: rgba(0, 174, 197, 0.109);
+     padding: 25px;
 }
 
 /* Creates space between name fields. Padding adds space to right of each name field. Margin adds space top and bottom when they collapse on themselves */
+
 .nameform {
      padding: 0px 10px 0px 0px;
      margin: 5px 0px;
      vertical-align: te;
+}
+
+#footer {
+     height: 30px;
+     border-top: 5px solid #ffc107;
+     text-align: center;
+     opacity: .9;
 }

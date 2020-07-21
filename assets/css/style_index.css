@@ -1,6 +1,6 @@
 #navpad {
-  padding: 8px 20px;
-  opacity: .9;
+     padding: 8px 20px;
+     opacity: .9;
 }
 
 /* #name {
@@ -9,27 +9,34 @@
 } */
 
 .head {
-  margin: 5px 20px;
-  margin-top: 15px;
-  padding-bottom: 5px;
-  font-size: 24px;
-  opacity: .7;
+     margin: 5px 20px;
+     margin-top: 15px;
+     padding-bottom: 5px;
+     font-size: 24px;
+     opacity: .7;
 }
 
 .active {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: goldenrod;
-  -moz-text-decoration-color: goldenrod;
-  -moz-text-decoration-style: wavy;
+     text-decoration-line: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: goldenrod;
+     -moz-text-decoration-color: goldenrod;
+     -moz-text-decoration-style: wavy;
 }
 
 .navbar-toggler {
-  background-color: black;
-  opacity: .25;
+     background-color: black;
+     opacity: .25;
 }
 
 .container {
-  margin-top: 20px;
-  margin-left: 5px;
+     margin-top: 20px;
+     margin-left: 5px;
+}
+
+#footer {
+     height: 30px;
+     border-top: 5px solid #ffc107;
+     text-align: center;
+     opacity: .9;
 }
