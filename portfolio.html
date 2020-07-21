@@ -2,274 +2,291 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Pat Downer</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio - Pat Downer</title>
 
-  <!-- Reset styelsheet -->
-  <link rel="stylesheet" href="./assets/css/reset.css">
+     <!-- Reset styelsheet -->
+     <link rel="stylesheet" href="./assets/css/reset.css">
 
-  <!-- Bootstrap stylesheet info -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!-- Bootstrap stylesheet info -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-  <!-- page-specific stylesheet -->
-  <link rel="stylesheet" href="./assets/css/style_portfolio.css">
+     <!-- page-specific stylesheet -->
+     <link rel="stylesheet" href="./assets/css/style_portfolio.css">
 </head>
 
 <body>
 
 
-  <!-- #navpad was fixing the left indent of my name, but now it's not working again -->
-  <!-- nav bar -->
-  <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
-    <a class="navbar-brand" href="./index.html">Pat Downer</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+     <!-- #navpad was fixing the left indent of my name, but now it's not working again -->
+     <!-- nav bar -->
+     <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
+          <a class="navbar-brand" href="./index.html">Pat Downer</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <a class="nav-link" href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link active" href="./portfolio.html">Portfolio<span
+                                   class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+               </ul>
+          </div>
+     </nav>
 
-   <h1 class="border-bottom boarder border-warning text-body head">Portfolio</h1>
+     <h1 class="border-bottom boarder border-warning text-body head">Portfolio</h1>
 
-   <!-- why doesn't this run basically full width except the margin?? -->
-   <!-- why is there so much white space under this container?? -->
-  <div class="container">
-       <div class="row">
-            <div class="col-sm-6">
-                 <p>I am currently a student in UC Irvine's Coding Boot Camp. As we progress through our assignments, I will have more completed work to list in this portfolio.</p>
-                 <p>Click on each project for further information.</p>
+     <!-- why doesn't this run basically full width except the margin?? -->
+     <!-- why is there so much white space under this container?? -->
+     <div class="container">
+          <div class="row">
+               <div class="col-sm-6">
+                    <p>I am currently a student in UC Irvine's Coding Boot Camp. As we progress through our assignments,
+                         I will have more completed work to list in this portfolio.</p>
+                    <p>Click on each project for further information.</p>
                </div>
                <div class="col-sm-6">
-                    <img id="busygif" src="https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif" class="card-img-top folioimage" alt="dog paws typing on keyboard and the word 'busy' scrolling in continuous repeat">
+                    <img id="busygif" src="https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif"
+                         class="card-img-top folioimage"
+                         alt="dog paws typing on keyboard and the word 'busy' scrolling in continuous repeat">
                </div>
           </div>
-     </div>
+          <!-- </div> -->
 
-    <div class="row row-cols-1 row-cols-sm-3 space">
-    
-      <!-- first card -->
-      <!-- Why does this one close when others are clicked, butthat doesn't happen with any of the rest of them?!!! Is it possible that there's something diffrent in THEIR css?? -->
-    <div class="col mb-4">
-        <div class="card-body">
-          <!-- start of accordion section -->
-          <div class="accordion" id="accordionExample">
-            <div class="card border-info">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  <!-- card image -->
-                  <img src="./assets/images/CatMouseGame.png" class="card-img-top folioimage" alt="Game screen. Lives 9. Score 0. Mouse in a castle facing falling mouse, crab, cheeseburger, and donut.">
-                    Cat and Mouse Game
-                  </button>
-                </h2>
-              </div>
-          
-              <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body card-body-btm">
-                  <p>The cat must stop the mice and crabs from getting past. Collect falling powerups for a variety of changes to game play. How many animals can you stop before your 9 lives are spent?</p>
-                  <a href="https://scratch.mit.edu/projects/410019969/" class="btn btn-info">Check it out!</a>
-                </div>
-              </div>
-            </div>
+          <div class="row row-cols-1 row-cols-sm-3 space">
+
+               <!-- first card -->
+               <!-- Why does this one close when others are clicked, butthat doesn't happen with any of the rest of them?!!! Is it possible that there's something diffrent in THEIR css?? -->
+               <div class="col mb-4">
+                    <div class="card-body">
+                         <!-- start of accordion section -->
+                         <div class="accordion" id="accordionExample1">
+                              <div class="card border-info">
+                                   <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                             <button class="btn btn-link btn-block text-center text-info" type="button"
+                                                  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                  aria-controls="collapseOne">
+                                                  <!-- card image -->
+                                                  <img src="./assets/images/CatMouseGame.png"
+                                                       class="card-img-top folioimage"
+                                                       alt="Game screen. Lives 9. Score 0. Mouse in a castle facing falling mouse, crab, cheeseburger, and donut.">
+                                                  Cat and Mouse Game
+                                             </button>
+                                        </h2>
+                                   </div>
+
+                                   <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample1">
+                                        <div class="card-body card-body-btm">
+                                             <p>The cat must stop the mice and crabs from getting past. Collect falling
+                                                  powerups for a variety of changes to game play. How many animals can
+                                                  you stop before your 9 lives are spent?</p>
+                                             <a href="https://scratch.mit.edu/projects/410019969/"
+                                                  class="btn btn-info">Check it out!</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <!-- second card -->
+               <div class="col mb-4">
+
+                    <div class="card-body">
+                         <!-- start of accordion section -->
+                         <div class="accordion" id="accordionExample2">
+                              <div class="card border-info">
+                                   <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                             <button class="btn btn-link btn-block text-center text-info" type="button"
+                                                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                                  aria-controls="collapseTwo">
+                                                  <!-- card image-->
+                                                  <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
+                                                       class="card-img-top folioimage" alt="...">
+                                                  Project 2
+                                             </button>
+                                        </h2>
+                                   </div>
+
+                                   <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample2">
+                                        <div class="card-body card-body-btm">
+                                             <p>Coming soon!</p>
+                                             <a href="" class="btn btn-info">Check it out!</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <!-- third card -->
+               <div class="col mb-4">
+
+                    <div class="card-body">
+                         <!-- start of accordion section -->
+                         <div class="accordion" id="accordionExample3">
+                              <div class="card border-info">
+                                   <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                             <button class="btn btn-link btn-block text-center text-info" type="button"
+                                                  data-toggle="collapse" data-target="#collapseThree"
+                                                  aria-expanded="true" aria-controls="collapseThree">
+                                                  <!-- card image-->
+                                                  <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
+                                                       class="card-img-top folioimage" alt="...">
+                                                  Project 3
+                                             </button>
+                                        </h2>
+                                   </div>
+
+                                   <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample3">
+                                        <div class="card-body card-body-btm">
+                                             <p>Coming soon!</p>
+                                             <a href="" class="btn btn-info">Check it out!</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <!-- fourth card -->
+               <div class="col mb-4">
+
+                    <div class="card-body">
+                         <!-- start of accordion section -->
+                         <div class="accordion" id="accordionExample4">
+                              <div class="card border-info">
+                                   <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                             <button class="btn btn-link btn-block text-center text-info" type="button"
+                                                  data-toggle="collapse" data-target="#collapseFour"
+                                                  aria-expanded="true" aria-controls="collapseFour">
+                                                  <!-- card image-->
+                                                  <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
+                                                       class="card-img-top folioimage" alt="...">
+                                                  Project 4
+                                             </button>
+                                        </h2>
+                                   </div>
+
+                                   <div id="collapseFour" class="collapse hide" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample4">
+                                        <div class="card-body card-body-btm">
+                                             <p>Coming soon!</p>
+                                             <a href="" class="btn btn-info">Check it out!</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <!-- fifth card -->
+               <div class="col mb-4">
+
+                    <div class="card-body">
+                         <!-- start of accordion section -->
+                         <div class="accordion" id="accordionExample5">
+                              <div class="card border-info">
+                                   <div class="card-header" id="headingFive">
+                                        <h2 class="mb-0">
+                                             <button class="btn btn-link btn-block text-center text-info" type="button"
+                                                  data-toggle="collapse" data-target="#collapseFive"
+                                                  aria-expanded="true" aria-controls="collapseFive">
+                                                  <!-- card image -->
+                                                  <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
+                                                       class="card-img-top folioimage" alt="...">
+                                                  Project 5
+                                             </button>
+                                        </h2>
+                                   </div>
+
+                                   <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample5">
+                                        <div class="card-body card-body-btm">
+                                             <p>Coming soon!</p>
+                                             <a href="" class="btn btn-info">Check it out!</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <!-- sixth card -->
+               <div class="col mb-4">
+
+                    <div class="card-body">
+                         <!-- start of accordion section -->
+                         <div class="accordion" id="accordionExample6">
+                              <div class="card border-info">
+                                   <div class="card-header" id="headingSix">
+                                        <h2 class="mb-0">
+                                             <button class="btn btn-link btn-block text-center text-info" type="button"
+                                                  data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                                                  aria-controls="collapseSix">
+                                                  <!-- card image-->
+                                                  <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
+                                                       class="card-img-top folioimage" alt="...">
+                                                  Project 6
+                                             </button>
+                                        </h2>
+                                   </div>
+
+                                   <div id="collapseSix" class="collapse hide" aria-labelledby="headingSix"
+                                        data-parent="#accordionExample6">
+                                        <div class="card-body card-body-btm">
+                                             <p>Coming soon!</p>
+                                             <a href="" class="btn btn-info">Check it out!</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+
           </div>
-        </div>
-      </div>
-    
+          <div id="bottom"></div>
 
-    <!-- second card -->
-    <div class="col mb-4">
-        
-        <div class="card-body">
-          <!-- start of accordion section -->
-          <div class="accordion" id="accordionExample">
-            <div class="card border-info">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
-                  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  <!-- card image-->
-                  <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                    class="card-img-top folioimage" alt="...">
-                    Project 2
-                  </button>
-                </h2>
-              </div>
-  
-              <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body card-body-btm">
-                  <p>Coming soon!</p>
-                  <a href="" class="btn btn-info">Check it out!</a>
-                </div>
-              </div>
-            </div>
+          <div id="footer" class="fixed-bottom bg-info text-light">
+               &copy; 2020
           </div>
-        </div>
-      </div>
-
-
-    <!-- third card -->
-    <div class="col mb-4">
-    
-      <div class="card-body">
-        <!-- start of accordion section -->
-        <div class="accordion" id="accordionExample">
-          <div class="card border-info">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
-                  data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                  <!-- card image-->
-                  <img
-                    src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                    class="card-img-top folioimage" alt="...">
-                  Project 3
-                </button>
-              </h2>
-            </div>
-    
-            <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body card-body-btm">
-                <p>Coming soon!</p>
-                <a href="" class="btn btn-info">Check it out!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  <!-- fourth card -->
-  <div class="col mb-4">
-  
-    <div class="card-body">
-      <!-- start of accordion section -->
-      <div class="accordion" id="accordionExample">
-        <div class="card border-info">
-          <div class="card-header" id="headingFour">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
-                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                <!-- card image-->
-                <img
-                  src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                  class="card-img-top folioimage" alt="...">
-                Project 4
-              </button>
-            </h2>
-          </div>
-  
-          <div id="collapseFour" class="collapse hide" aria-labelledby="headingFour" data-parent="#accordionExample">
-            <div class="card-body card-body-btm">
-               <p>Coming soon!</p>
-              <a href="" class="btn btn-info">Check it out!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-    <!-- fifth card -->
-    <div class="col mb-4">
-    
-      <div class="card-body">
-        <!-- start of accordion section -->
-        <div class="accordion" id="accordionExample">
-          <div class="card border-info">
-            <div class="card-header" id="headingFive">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
-                  data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                  <!-- card image -->
-                  <img
-                    src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                    class="card-img-top folioimage" alt="...">
-                  Project 5
-                </button>
-              </h2>
-            </div>
-    
-            <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body card-body-btm">
-               <p>Coming soon!</p>
-                <a href="" class="btn btn-info">Check it out!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  <!-- sixth card -->
-  <div class="col mb-4">
-  
-    <div class="card-body">
-      <!-- start of accordion section -->
-      <div class="accordion" id="accordionExample">
-        <div class="card border-info">
-          <div class="card-header" id="headingSix">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
-                data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                <!-- card image-->
-                <img
-                  src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                  class="card-img-top folioimage" alt="...">
-                Project 6
-              </button>
-            </h2>
-          </div>
-  
-          <div id="collapseSix" class="collapse hide" aria-labelledby="headingSix" data-parent="#accordionExample">
-            <div class="card-body card-body-btm">
-               <p>Coming soon!</p>
-              <a href="" class="btn btn-info">Check it out!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
-    </div>
-<div id="bottom"></div>
-
-<div id="footer" class="fixed-bottom bg-info text-light">
-     &copy; 2020
-</div>
-
-
-    
-  <!-- JavaScript plugins from Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+          <!-- JavaScript plugins from Bootstrap -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+               integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+               crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+               integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+               crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+               integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+               crossorigin="anonymous"></script>
 </body>
 
 </html>
