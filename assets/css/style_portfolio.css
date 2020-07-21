@@ -3,11 +3,6 @@
      opacity: .9;
 }
 
-/* #name {
-  background-color: mediumseagreen;
-  padding: 10px 30px;
-} */
-
 .head {
      margin: 5px 20px;
      margin-top: 15px;
@@ -58,6 +53,14 @@
      margin-top: 8px;
 }
 
-p{
-     margin-left: 20px;
+#busygif {
+     height: 70%;
+     width: 100%;
+}
+
+.container {
+     margin-top: 20px;
+     margin-left: 5px;
+     margin-right: 20px;
+     width: 100%;
 }
