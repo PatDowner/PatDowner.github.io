@@ -1,29 +1,26 @@
 /* Add some depth to nav bar and left align with content below */
-
 #navpad {
      padding: 8px 20px;
      opacity: .9;
 }
 
 /* Sets yellow squiggly under the active link in the nav bar */
-
 .active {
      text-decoration-line: underline;
      text-decoration-style: wavy;
      text-decoration-color: goldenrod;
      -moz-text-decoration-color: goldenrod;
      -moz-text-decoration-style: wavy;
+     -moz-text-decoration-line: underline;
 }
 
 /* On smaller screens, the navbar switches to a toggle button, this sets the color of the button */
-
 .navbar-toggler {
      background-color: black;
      opacity: .25;
 }
 
 /* Give space around the page head "Container", left align with other text, increases font size, reduced opacity to lighten color*/
-
 .head {
      margin: 5px 20px;
      margin-top: 15px;
@@ -33,29 +30,27 @@
 }
 
 /* Blue background fill around form */
-
-.container-sm {
+.container {
      margin: 20px;
-     ;
      background-color: rgba(0, 174, 197, 0.109);
      padding: 25px;
 }
 
-/* Creates space between name fields. Padding adds space to right of each name field. Margin adds space top and bottom when they collapse on themselves */
-
-.nameform {
-     padding: 0px 10px 0px 0px;
-     margin: 5px 0px;
-     vertical-align: te;
-}
-
+/* Adds white space at bottom of page so all text will clear footer */
 #bottom {
      height: 35px;
 }
 
+/* creates footer at bottom of page */
 #footer {
      height: 30px;
      border-top: 5px solid #ffc107;
      text-align: center;
      opacity: .9;
+}
+
+@media only screen and (max-width: 576px) {
+.container {
+     width: 89%;
+}
 }

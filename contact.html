@@ -50,8 +50,7 @@
 
      <h1 class="border-bottom boarder border-warning text-body head">Contact</h1>
 
-     <!-- why won't the right margin show up at smaller sizes?? or do I have to add a media thing so that the margin on the form goes away at sm size  -->
-     <form class="container-sm border border-info rounded">
+     <form class="container border border-info rounded">
           <!-- Email address field -->
           <div class="row form-group">
                <div class="col-sm-12">
@@ -66,14 +65,14 @@
                <div class="col-sm-12">
                     <div class="row">
                          <div class="col-sm-12">
-                              <label for="exampleFormControlInput1">Name:</label>
+                              <label for="exampleFormControlInput2">Name:</label>
                          </div>
                     </div>
 
-                    <div class="row nameform">
+                    <div class="row">
                          <!-- name prefix drop down -->
-                         <div class="col-sm-2 nameform">
-                              <select class="form-control" id="exampleFormControlSelect1">
+                         <div class="col-sm-3 col-md-2 nameform">
+                              <select class="form-control" id="exampleFormControlSelect2">
                                    <option>Mr.</option>
                                    <option>Mrs.</option>
                                    <option>Miss.</option>
@@ -83,17 +82,25 @@
                          </div>
 
                          <!-- first name field -->
-                         <div class="col-sm-5 nameform">
-                              <input type="text" class="form-control" id="exampleFormControlInput1"
+                         <div class="col-sm-4 col-md-5 nameform">
+                              <input type="text" class="form-control" id="exampleFormControlInput2"
                                    placeholder="First Name">
                          </div>
 
                          <!-- last name field -->
-                         <div class="col-sm-5 nameform">
-                              <input type="text" class="form-control" id="exampleFormControlInput1"
+                         <div class="col-sm-4 col-md-5 nameform">
+                              <input type="text" class="form-control" id="exampleFormControlInput3"
                                    placeholder="Last Name">
                          </div>
                     </div>
+               </div>
+          </div>
+
+          <!-- Subject field -->
+          <div class="row form-group">
+               <div class="col-sm-12">
+                    <label for="exampleFormControlInput4">Subject:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Subject">
                </div>
           </div>
 
@@ -101,8 +108,7 @@
           <div class="row form-group">
                <div class="col-sm-12">
                     <label for="exampleFormControlTextarea1">Message:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                         placeholder="Type message here."></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type message here."></textarea>
                </div>
           </div>
 
