@@ -60,7 +60,7 @@
 
 /* creates footer at bottom of page */
 
-#footer {
+footer {
      height: 30px;
      border-top: 5px solid #ffc107;
      text-align: center;
