@@ -18,23 +18,32 @@
 </head>
 
 <body>
-     <!-- #navpad was fixing the left indent of my name, but now it's not working again -->
+    
      <!-- nav bar -->
      <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
+          
+          <!-- my name, left side of nav bar. links to about page -->
           <a class="navbar-brand" href="./index.html">Pat Downer</a>
+          
+          <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- nav links to pages in site, right side of nav bar -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                <ul class="navbar-nav">
+                    <!-- About link -->
                     <li class="nav-item">
                          <a class="nav-link" href="./index.html">About</a>
                     </li>
+                    <!-- Portfolio link, current/active page -->
                     <li class="nav-item">
                          <a class="nav-link active" href="./portfolio.html">Portfolio<span
                                    class="sr-only">(current)</span></a>
                     </li>
+                    <!-- Contact link -->
                     <li class="nav-item">
                          <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
@@ -42,25 +51,29 @@
           </div>
      </nav>
 
+     <!-- page head -->
      <h1 class="border-bottom boarder border-warning text-body head">Portfolio</h1>
 
-     <!-- why is there so much white space under this container?? -->
+     <!-- Page content -->
      <div class="container">
+          <!-- Top row -->
           <div class="row">
+               <!-- left column: brief explanation for why page is mostly placeholder images/text -->
                <div class="col-sm-6">
                     <p>I am currently a student in UC Irvine's Coding Boot Camp. As we progress through our assignments,
                          I will have more completed work to list in this portfolio.</p>
                     <p>Click on each project for further information.</p>
                </div>
+               <!-- right column: cute gif -->
                <div class="col-sm-6">
-                    <!--gif source: https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif -->
+                    <!--original gif source: https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif -->
                     <img id="busygif" src="./assets/images/busygiphy.webp"
                          class="card-img-top folioimage"
                          alt="dog paws typing on keyboard and the word 'busy' scrolling in continuous repeat">
                </div>
           </div>
           
-          
+          <!-- Work samples - mostly placeholder right now until I'm further into the course -->
           <div class="row row-cols-1 row-cols-sm-3">
                
                <!-- first card -->
@@ -113,7 +126,7 @@
                                                   aria-controls="collapseTwo">
                                                   <!-- card image-->
                                                   <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                                                       class="card-img-top folioimage" alt="...">
+                                                       class="card-img-top folioimage" alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
                                                   Project 2
                                              </button>
                                         </h2>
@@ -146,7 +159,7 @@
                                                   aria-expanded="true" aria-controls="collapseThree">
                                                   <!-- card image-->
                                                   <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                                                       class="card-img-top folioimage" alt="...">
+                                                       class="card-img-top folioimage" alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
                                                   Project 3
                                              </button>
                                         </h2>
@@ -179,7 +192,7 @@
                                                   aria-expanded="true" aria-controls="collapseFour">
                                                   <!-- card image-->
                                                   <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                                                       class="card-img-top folioimage" alt="...">
+                                                       class="card-img-top folioimage" alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
                                                   Project 4
                                              </button>
                                         </h2>
@@ -212,7 +225,7 @@
                                                   aria-expanded="true" aria-controls="collapseFive">
                                                   <!-- card image -->
                                                   <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                                                  class="card-img-top folioimage" alt="...">
+                                                  class="card-img-top folioimage" alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
                                                   Project 5
                                              </button>
                                         </h2>
@@ -245,7 +258,7 @@
                                                   aria-controls="collapseSix">
                                                   <!-- card image-->
                                                   <img src="https://i.pinimg.com/originals/02/f0/9e/02f09eebf44121bc87b5ed80f0b94887.jpg"
-                                                  class="card-img-top folioimage" alt="...">
+                                                  class="card-img-top folioimage" alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
                                                   Project 6
                                              </button>
                                         </h2>
@@ -264,16 +277,16 @@
                </div>
                
 
+          </div>
+          </div>
 
-          </div>
-          </div>
+          <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
           <div id="bottom"></div>
 
+          <!-- footer -->
           <div id="footer" class="fixed-bottom bg-info text-light">
                &copy; 2020
           </div>
-
-
 
           <!-- JavaScript plugins from Bootstrap -->
           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
