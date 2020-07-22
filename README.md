@@ -3,7 +3,10 @@
 
 This portfolio is to be used to highlight my work from coding bootcamp and (eventually) beyond. As the course goes on, I can update it with additional content I create, with feedback from career services, and can eventually use this for job hunting.
 
-# Guidelines we were given for assignment
+# Assignment Guidelines
+
+We were given the following guidelines for this task.
+
 ## Directions:
 
 First, you will use the Bootstrap CSS Framework to create a mobile responsive portfolio. How do you deliver this? Here are some guidelines:
@@ -80,19 +83,20 @@ A few notes about the styling on the site:
 
      * `contact.html` page has sub rows and sub columns.
 
+     * `portfolio.html` page sets the cards to 3 columns on screens size `md` and larger, 2 columns on screens size `sm`, and 1 column on screens size `xs`
 
+# Deployment Details
 
+Deployed link: https://patdowner.github.io/
 
+## Screenshots:
 
-### h3
-**This is bold Text**
-*This is italicized*
-**This is _important_ text**
-~~This is mistaken text~~
-***This is uber important text***
- # Calculator App
-### Worked on by big mama studios
->This app is an HTML + JS calculator , made for your math needs 
-We worked on this in class today 
-Use buttons on page to utilize the calculators
-On this app we utilized _JavaScript_ and **HTML**
+`index.html`
+
+![Screenshot of index page](/assets/images/site_screenshots/index.png)
+
+`portfolio.html`
+![Screenshot of index page](/assets/images/site_screenshots/portfolio.png)
+
+`contact.html`
+![Screenshot of index page](/assets/images/site_screenshots/contact.png)
