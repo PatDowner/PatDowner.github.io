@@ -18,38 +18,42 @@
 </head>
 
 <body>
-     <!-- #navpad was fixing the left indent of my name, but now it's not working again -->
      <!-- nav bar -->
      <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
+
+          <!-- my name, left side of nav bar. links to about page -->
           <a class="navbar-brand" href="./index.html">Pat Downer</a>
 
+          <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
           </button>
 
+          <!-- nav links to pages in site, right side of nav bar -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                <ul class="navbar-nav">
-
+                    <!-- About link -->
                     <li class="nav-item">
                          <a class="nav-link" href="./index.html">About</a>
                     </li>
-
+                    <!-- Portfolio link -->
                     <li class="nav-item">
                          <a class="nav-link" href="./portfolio.html">Portfolio</a>
                     </li>
-
+                    <!-- Contact link, current/active page -->
                     <li class="nav-item">
                          <a class="nav-link  active" href="./contact.html">Contact<span
                                    class="sr-only">(current)</span></a>
                     </li>
-
                </ul>
           </div>
      </nav>
 
+     <!-- Page head -->
      <h1 class="border-bottom boarder border-warning text-body head">Contact</h1>
 
+     <!-- Contact form w/ blue bg -->
      <form class="container border border-info rounded">
           <!-- Email address field -->
           <div class="row form-group">
@@ -120,7 +124,10 @@
           </div>
      </form>
 
+     <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
      <div id="bottom"></div>
+     
+     <!-- footer -->
      <div id="footer" class="fixed-bottom bg-info text-light">
           &copy; 2020
      </div>
