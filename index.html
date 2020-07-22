@@ -18,23 +18,31 @@
 </head>
 
 <body>
-     <!-- #navpad was fixing the left indent of my name, but now it's not working again -->
-     <!-- For some reason, this nav bar is wider than the one for the other 2 -->
+
      <!-- nav bar -->
      <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
+
+          <!-- my name, left side of nav bar. links to about page -->
           <a class="navbar-brand" href="./index.html">Pat Downer</a>
+         
+          <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- nav links to pages in site, right side of nav bar -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                <ul class="navbar-nav">
+                    <!-- About link, current/active page -->
                     <li class="nav-item">
                          <a class="nav-link  active" href="./index.html">About<span class="sr-only">(current)</span></a>
                     </li>
+                    <!-- Portfolio link -->
                     <li class="nav-item">
                          <a class="nav-link" href="./portfolio.html">Portfolio</a>
                     </li>
+                    <!-- Contact link -->
                     <li class="nav-item">
                          <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
@@ -42,29 +50,33 @@
           </div>
      </nav>
 
-
+     <!-- Page head -->
      <h1 class="border-bottom boarder border-warning text-body head">About Me</h1>
 
-
+     <!-- Grid for image and paragraphs -->
      <div class="container">
           <div class="row">
+               <!-- left column: picture of me -->
                <figure class="col-sm-4 figure">
                     <img src="./assets/images/me.jpg" class="figure-img img-fluid rounded"
                          alt="White person in black tank top and rectangular black plastic rimmed glasses looking to camera's left and smiling. Their short hair falls in waves of blue, purple, and green.">
                </figure>
+               <!-- right column: Self bio -->
                <div class="col-sm-8">
                     <p>Hello, my name is Pat Downer. I am currently a student in a coding bootcamp course through University of California Irvine. My goal is to turn this period of coronavirus-induced unemployment into a new career path that capitalizes on my strengths and interests.</p>
                     <p>After graduating from Boston University in 2007 with a bachelors degree in Deaf Studies, I taught math for two years. During those years, I discovered that one of my greatest strengths and interests as a teacher was my ability to utilize technology to create my own classroom materials.</p>
                     <p>In the 10 years since then, most of which I spent working for the textbook company Pearson, I discovered that I enjoy the problem solving of writing formulas and filters to automate certain work tasks. Setting up these automated tasks became my favorite part of my last job. Realizing this was what lead me to decide to seek a career change into the technical field so that these sorts of tasks would become a substantial part of my regular work day.</p>
                     <p>After this course ends in mid-October, I hope to obtain a full-time full-stack developer position either working with a local company/non-profit or working remotely with a local company/non-profit from another part of the country or world. I am also open to freelance work as well.</p>
+                    <!-- my contact info -->
                     <p>Folllow me on <a href="https://www.linkedin.com/in/pat-downer-62496715/">my LinkedIn profile</a> and on this site. I can also be reached <a href="mailto:patricia.downer@gmail.com">via email</a>.</p>
                </div>
           </div>
      </div>
 
+     <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
      <div id="bottom"></div>
 
-
+     <!-- footer -->
      <div id="footer" class="fixed-bottom bg-info text-light">
           &copy; 2020
      </div>
