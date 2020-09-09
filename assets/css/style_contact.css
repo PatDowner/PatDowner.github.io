@@ -38,8 +38,8 @@
 
 /* Blue background fill around form */
 
-.container {
-     margin: 20px;
+.formbox {
+     /* margin: 20px; */
      background-color: rgba(0, 174, 197, 0.109);
      padding: 25px;
 }

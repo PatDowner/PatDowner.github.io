@@ -2,146 +2,154 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Portfolio - Pat Downer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Pat Downer</title>
 
-     <!-- Reset styelsheet -->
-     <link rel="stylesheet" href="./assets/css/reset.css">
+  <!-- Reset styelsheet -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
 
-     <!-- Bootstrap stylesheet info -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Bootstrap stylesheet info -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-     <!-- page-specific stylesheet -->
-     <link rel="stylesheet" href="./assets/css/style_contact.css">
+  <!-- page-specific stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style_contact.css">
 </head>
 
 <body>
-     <!-- nav bar -->
-     <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
+  <!-- nav bar -->
+  <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
 
-          <!-- my name, left side of nav bar. links to about page -->
-          <a class="navbar-brand" href="./index.html">Pat Downer</a>
+    <!-- my name, left side of nav bar. links to about page -->
+    <a class="navbar-brand" href="./index.html">Pat Downer</a>
 
-          <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-          </button>
+    <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <!-- nav links to pages in site, right side of nav bar -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-               <ul class="navbar-nav">
-                    <!-- About link -->
-                    <li class="nav-item">
-                         <a class="nav-link" href="./index.html">About</a>
-                    </li>
-                    <!-- Portfolio link -->
-                    <li class="nav-item">
-                         <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <!-- Contact link, current/active page -->
-                    <li class="nav-item">
-                         <a class="nav-link  active" href="./contact.html">Contact<span
-                                   class="sr-only">(current)</span></a>
-                    </li>
-               </ul>
+    <!-- nav links to pages in site, right side of nav bar -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- About link -->
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">About</a>
+        </li>
+        <!-- Portfolio link -->
+        <li class="nav-item">
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <!-- Contact link, current/active page -->
+        <li class="nav-item">
+          <a class="nav-link  active" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page head -->
+  <h1 class="border-bottom boarder border-warning text-body head">Contact</h1>
+  <div class="container mt-4 ml-0 mr-0">
+    <div class="row m-0">
+    <!-- Contact form w/ blue bg -->
+    <div class="col-12 col-md-8 mb-4">
+      <form class="formbox border border-info rounded">
+        <!-- Email address field -->
+        <section class="row form-group">
+          <div class="col-sm-12">
+            <label for="exampleFormControlInput1">Email address:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-     </nav>
+        </section>
 
-     <!-- Page head -->
-     <h1 class="border-bottom boarder border-warning text-body head">Contact</h1>
+        <!-- Name fields -->
+        <section class="row form-group">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12">
+                <label for="exampleFormControlInput2">Name:</label>
+              </div>
+            </div>
 
-     <!-- Contact form w/ blue bg -->
-     <form class="container border border-info rounded">
-          <!-- Email address field -->
-          <section class="row form-group">
-               <div class="col-sm-12">
-                    <label for="exampleFormControlInput1">Email address:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                         placeholder="name@example.com">
-               </div>
-          </section>
+            <div class="row">
+              <!-- name prefix drop down -->
+              <div class="col-sm-3 col-md-2 nameform">
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Mr.</option>
+                  <option>Mrs.</option>
+                  <option>Miss.</option>
+                  <option>Mx.</option>
+                  <option>Other (include with first name)</option>
+                </select>
+              </div>
 
-          <!-- Name fields -->
-          <section class="row form-group">
-               <div class="col-sm-12">
-                    <div class="row">
-                         <div class="col-sm-12">
-                              <label for="exampleFormControlInput2">Name:</label>
-                         </div>
-                    </div>
+              <!-- first name field -->
+              <div class="col-sm-4 col-md-5 nameform">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="First Name">
+              </div>
 
-                    <div class="row">
-                         <!-- name prefix drop down -->
-                         <div class="col-sm-3 col-md-2 nameform">
-                              <select class="form-control" id="exampleFormControlSelect2">
-                                   <option>Mr.</option>
-                                   <option>Mrs.</option>
-                                   <option>Miss.</option>
-                                   <option>Mx.</option>
-                                   <option>Other (include with first name)</option>
-                              </select>
-                         </div>
+              <!-- last name field -->
+              <div class="col-sm-4 col-md-5 nameform">
+                <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+        </section>
 
-                         <!-- first name field -->
-                         <div class="col-sm-4 col-md-5 nameform">
-                              <input type="text" class="form-control" id="exampleFormControlInput2"
-                                   placeholder="First Name">
-                         </div>
+        <!-- Subject field -->
+        <section class="row form-group">
+          <div class="col-sm-12">
+            <label for="exampleFormControlInput4">Subject:</label>
+            <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Subject">
+          </div>
+        </section>
 
-                         <!-- last name field -->
-                         <div class="col-sm-4 col-md-5 nameform">
-                              <input type="text" class="form-control" id="exampleFormControlInput3"
-                                   placeholder="Last Name">
-                         </div>
-                    </div>
-               </div>
-          </section>
+        <!-- Message field -->
+        <section class="row form-group">
+          <div class="col-sm-12">
+            <label for="exampleFormControlTextarea1">Message:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+              placeholder="Type message here."></textarea>
+          </div>
+        </section>
 
-          <!-- Subject field -->
-          <section class="row form-group">
-               <div class="col-sm-12">
-                    <label for="exampleFormControlInput4">Subject:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Subject">
-               </div>
-          </section>
+        <!-- submit button -->
+        <section class="row">
+          <div class="col-sm-12">
+            <button class="btn btn-info" type="submit">Submit</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    <div class="col-12 col-md-4  mb-4">
+      <div class="LI-profile-badge" data-version="v1" width="100%" data-size="medium" data-locale="en_US"
+        data-type="vertical" data-theme="light" data-vanity="pat-downer-62496715"><a class="LI-simple-link"
+          href='https://www.linkedin.com/in/pat-downer-62496715?trk=profile-badge'>Pat Downer</a></div>
+    </div>
+  </div>
+  </div>
+  <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
+  <div id="bottom"></div>
 
-          <!-- Message field -->
-          <section class="row form-group">
-               <div class="col-sm-12">
-                    <label for="exampleFormControlTextarea1">Message:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type message here."></textarea>
-               </div>
-          </section>
+  <!-- footer -->
+  <footer class="fixed-bottom bg-info text-light">
+    &copy; 2020
+  </footer>
 
-          <!-- submit button -->
-          <section class="row">
-               <div class="col-sm-12">
-                    <button class="btn btn-info" type="submit">Submit</button>
-               </div>
-          </section>
-     </form>
-
-     <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
-     <div id="bottom"></div>
-     
-     <!-- footer -->
-     <footer class="fixed-bottom bg-info text-light">
-          &copy; 2020
-     </footer>
-
-     <!-- JavaScript plugins from Bootstrap -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-          crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-          crossorigin="anonymous"></script>
+  <!-- JavaScript plugins from Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- LinkedIn Badge -->
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 
 </html>
