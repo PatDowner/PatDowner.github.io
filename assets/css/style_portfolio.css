@@ -3,107 +3,110 @@
 /* Add some depth to nav bar and left align with content below */
 
 #navpad {
-     padding: 8px 20px;
-     opacity: .9;
+  padding: 8px 20px;
+  opacity: .9;
 }
 
 /* Sets yellow squiggly under the active link in the nav bar */
 
 .active {
-     text-decoration-line: underline;
-     text-decoration-style: wavy;
-     text-decoration-color: #ffc107;
-     -moz-text-decoration-color: #ffc107;
-     -moz-text-decoration-style: wavy;
-     -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #ffc107;
+  -moz-text-decoration-color: #ffc107;
+  -moz-text-decoration-style: wavy;
+  -moz-text-decoration-line: underline;
 }
 
 /* On smaller screens, the navbar switches to a toggle button, this sets the color of the button */
 
 .navbar-toggler {
-     background-color: black;
-     opacity: .25;
+  background-color: black;
+  opacity: .25;
 }
 
 /* Give space around the page head "Container", left align with other text, increases font size, reduced opacity to lighten color*/
 
 .head {
-     margin: 5px 20px;
-     margin-top: 15px;
-     padding-bottom: 5px;
-     font-size: 24px;
-     opacity: .7;
+  margin: 5px 20px;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  font-size: 24px;
+  opacity: .7;
 }
 
 /* container for main page content */
 
 .container {
-     margin-top: 20px;
-     margin-left: 5px;
-     width: 100%;
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 100%;
 }
 
 /* allows small left/right margin maintained on xs screens */
 
-@media only screen and (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
      .container {
           width: 97%;
      }
-}
+} */
 
 /* set size of gif in right column */
 
 #busygif {
-     height: 70%;
-     width: 100%;
+  height: 70%;
+  width: 100%;
 }
 
 /* set blue background of card head (upper part visible on landing) & removes excess padding */
 
 .card-header {
-     padding: 0px;
-     padding-bottom: 1px;
-     background-color: rgba(0, 174, 197, 0.109);
+  padding: 0px;
+  padding-bottom: 1px;
+  background-color: rgba(0, 174, 197, 0.109);
 }
 
 /* margin space around image on card */
 
 .folioimage {
-     margin-bottom: 8px;
-     margin-top: 8px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 /* Project name, text visible under image on card */
 
 .text-info {
-     font-size: 18px;
-     font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* set blue background of card body (lower part that opens) & removes excess padding */
 
 .card-body {
-     padding: 0px;
-     background-color: rgba(0, 194, 197, 0.035);
+  padding: 0px;
+}
+
+.test {
+  background-color: rgba(0, 194, 197, 0.035);
 }
 
 /* gives padding around <p> text on card body describing project*/
 
 .card-body-btm {
-     padding: 10px;
+  padding: 10px;
 }
 
 /* Adds white space at bottom of page so all text will clear footer */
 
 #bottom {
-     height: 35px;
+  height: 35px;
 }
 
 /* creates footer at bottom of page */
 
 footer {
-     height: 30px;
-     border-top: 5px solid #ffc107;
-     text-align: center;
-     opacity: .9;
+  height: 30px;
+  border-top: 5px solid #ffc107;
+  text-align: center;
+  opacity: .9;
 }
