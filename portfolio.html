@@ -2,343 +2,381 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Portfolio - Pat Downer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Pat Downer</title>
 
-     <!-- Reset styelsheet -->
-     <link rel="stylesheet" href="./assets/css/reset.css">
+  <!-- Reset styelsheet -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
 
-     <!-- Bootstrap stylesheet info -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Bootstrap stylesheet info -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-     <!-- page-specific stylesheet -->
-     <link rel="stylesheet" href="./assets/css/style_portfolio.css">
+  <!-- page-specific stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style_portfolio.css">
 </head>
 
 <body>
-    
-     <!-- nav bar -->
-     <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
-          
-          <!-- my name, left side of nav bar. links to about page -->
-          <a class="navbar-brand" href="./index.html">Pat Downer</a>
-          
-          <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <!-- nav links to pages in site, right side of nav bar -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-               <ul class="navbar-nav">
-                    <!-- About link -->
-                    <li class="nav-item">
-                         <a class="nav-link" href="./index.html">About</a>
-                    </li>
-                    <!-- Portfolio link, current/active page -->
-                    <li class="nav-item">
-                         <a class="nav-link active" href="./portfolio.html">Portfolio<span
-                                   class="sr-only">(current)</span></a>
-                    </li>
-                    <!-- Contact link -->
-                    <li class="nav-item">
-                         <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-               </ul>
+  <!-- nav bar -->
+  <nav id="navpad" class="navbar navbar-dark bg-info navbar-expand-sm p-3 mb-2 sticky-top">
+
+    <!-- my name, left side of nav bar. links to about page -->
+    <a class="navbar-brand" href="./index.html">Pat Downer</a>
+
+    <!-- toggle button that appears in right of nav bar at small size screen size, used to reveal/hide nav links on small screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- nav links to pages in site, right side of nav bar -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- About link -->
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">About</a>
+        </li>
+        <!-- Portfolio link, current/active page -->
+        <li class="nav-item">
+          <a class="nav-link active" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Contact link -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- page head -->
+  <h1 class="border-bottom boarder border-warning text-body head">Portfolio</h1>
+
+  <!-- Page content -->
+  <main class="container">
+
+    <!-- Work samples-->
+    <section class="card-columns">
+
+      <!-- first card -->
+      <article class="card border-0">
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample1">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <!-- card image -->
+                    <img src="./assets/images/plyr2.jpg" class="card-img-top folioimage"
+                      alt="Website plyr 2. Profile for DrakkonOwl: World of Warcraft avatar, a bio, discord username, player handle for PSN and PC, genres, and a YouTube video. Navbar also has links to global chat, matches, and a log out. Footer copyright plyr 2, 2020. Powered by React.">
+                    plyr 2
+                  </button>
+                </h2>
+              </header>
+
+              <section id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
+                data-parent="#accordionExample1">
+                <div class="card-body card-body-btm">
+                  <p>A full stack React app for gamers looking for that "player 2" to play with. Users are matched based
+                    on the interests
+                    they list in their editable profile, share a YouTube video highlighting their own gaming skills,
+                    have the ability to
+                    friend each other, and are able to connect with each other via player handles listed in their
+                    profiles as well as an
+                    in-app chat board.</p>
+                  <p>This app is the final project from my Coding Boot Camp. Built using React, JSX, socket.io and more.
+                  </p>
+                  <p>I was mostly responsible for the front end. However, but assisted on the back end too when my team
+                    members needed it.
+                  </p>
+                  <a href="https://plyr-2.herokuapp.com/" class="btn btn-info">View App</a>
+                  <a href="https://github.com/mattjavier/plyr-2" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
           </div>
-     </nav>
+        </div>
+      </article>
 
-     <!-- page head -->
-     <h1 class="border-bottom boarder border-warning text-body head">Portfolio</h1>
+      <!-- next card -->
+      <article class="card border-0">
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample1b">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingOneb">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseOneb" aria-expanded="true" aria-controls="collapseOneb">
+                    <!-- card image -->
+                    <img src="./assets/images/googlebooks.jpg" class="card-img-top folioimage"
+                      alt="Nav bar that says GoogleBooks Search and has a link for home & saved. Saved page shows two books, Luck in the Shadows and Bone Doll Twin, both by Lynn Flewelling. Each book has a description, link for more info, and a delete button.">
+                    React Google Books Search
+                  </button>
+                </h2>
+              </header>
 
-     <!-- Page content -->
-     <main class="container">
-          <!-- Top row -->
-          <section class="row">
-               <!-- left column: brief explanation for why page is mostly placeholder images/text -->
-               <div class="col-sm-6">
-                    <p>I am currently a student in UC Irvine's Coding Boot Camp. As we progress through our assignments, I will have more completed work to list in this portfolio.</p>
-                    <p>Click on each project for further information.</p>
-               </div>
-               <!-- right column: cute gif -->
-               <figure class="col-sm-6">
-                    <!--original gif source: https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif -->
-                    <img id="busygif" src="./assets/images/busygiphy.webp"
-                         class="card-img-top folioimage"
-                         alt="dog paws typing on keyboard and the word 'busy' scrolling in continuous repeat">
-               </figure>
-          </section>
-          
-          <!-- Work samples-->
-          <section class="card-columns">
-               
-               <!-- first card -->
-               <article class="card border-0">
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample1">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                                  aria-controls="collapseOne">
-                                                  <!-- card image -->
-                                                  <img src="./assets/images/CatMouseGame.png"
-                                                       class="card-img-top folioimage"
-                                                       alt="Game screen. Lives 9. Score 0. Mouse in a castle facing falling mouse, crab, cheeseburger, and donut.">
-                                                  Cat and Mouse Game
-                                             </button>
-                                        </h2>
-                                   </header>
-
-                                   <section id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
-                                        data-parent="#accordionExample1">
-                                        <div class="card-body card-body-btm">
-                                             <p>The cat must stop the mice and crabs from getting past. Collect falling
-                                                  powerups for a variety of changes to game play. How many animals can
-                                                  you stop before your 9 lives are spent?</p>
-                                             <a href="https://scratch.mit.edu/projects/410019969/"
-                                                  class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
+              <section id="collapseOneb" class="collapse hide" aria-labelledby="headingOneb"
+                data-parent="#accordionExample1b">
+                <div class="card-body card-body-btm">
+                  <p>A React app that utilizes the Google Books API to allow a user to search for books and save them to
+                    a read list. Each
+                    book also appears with an external link to the book in the Google Play Store.
+                  </p>
+                  <a href="https://boiling-sierra-92871.herokuapp.com/" class="btn btn-info">View App</a>
+                  <a href="https://github.com/PatDowner/googleBooksSearch" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
 
 
-               <!-- second card -->
-               <article class="card border-0">
-                    
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample2">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                                                  aria-controls="collapseTwo">
-                                                  <!-- card image-->
-                                                  <img src="./assets/images/Poke_Ball.png"
-                                                       class="card-img-top folioimage" alt="red and white pokeball">
-                                                  Pokemon Fan Page
-                                             </button>
-                                        </h2>
-                                   </header>
+      <!-- second card -->
+      <article class="card border-0">
 
-                                   <section id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo"
-                                        data-parent="#accordionExample2">
-                                        <div class="card-body card-body-btm">
-                                             <p>A Pokemon fan page where a user can pull up data on individual pokemon, search through the cards from the Pokemon trading card game, and quiz themselves on their Pokemon knowledge.</p>
-                                             <p>This app was created in week 4 of my Coding Boot Camp. It is built using HTML, CSS, and Javascript. It uses the Materialize styling library and pulls much of its information from two Pokemon-related APIs (<a href="https://pokeapi.co/">1</a>, <a href="https://pokemontcg.io/">2</a>).</p>
-                                             <p>I was responsible for the Trivia page (functionality & style) and the functionality of the Cards page.</p>
-                                             <a href="https://kalynbsimms.github.io/pokeProject/" class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample2">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <!-- card image-->
+                    <img src="./assets/images/Poke_Ball.png" class="card-img-top folioimage"
+                      alt="red and white pokeball">
+                    Pokemon Fan Page
+                  </button>
+                </h2>
+              </header>
 
-
-               <!-- third card -->
-               <article class="card border-0">
-                    
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample3">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseThree"
-                                                  aria-expanded="true" aria-controls="collapseThree">
-                                                  <!-- card image-->
-                                                  <img src="./assets/images/weatherApp.png"
-                                                       class="card-img-top folioimage" alt="Current weather and 5-day forecast for Corona, CA on August tenth, 2020.">
-                                                  Weather App
-                                             </button>
-                                        </h2>
-                                   </header>
-
-                                   <section id="collapseThree" class="collapse hide" aria-labelledby="headingThree"
-                                        data-parent="#accordionExample3">
-                                        <div class="card-body card-body-btm">
-                                             <p>This is a simple weather app built with HTML, CSS, and Javascript. It utilizes the Bootstrap styling library and OpenWeather API.</p>
-                                             <p>It shows the current weather and 5-day forecast for a searched city. A search history of 9 cities is also available down the side.</p>
-                                             <a href="https://patdowner.github.io/weatherApp/" class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
+              <section id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo"
+                data-parent="#accordionExample2">
+                <div class="card-body card-body-btm">
+                  <p>A Pokemon fan page where a user can pull up data on individual pokemon, search through the cards
+                    from the Pokemon trading card game, and quiz themselves on their Pokemon knowledge.</p>
+                  <p>This app was created in week 4 of my Coding Boot Camp. It is built using HTML, CSS, and Javascript.
+                    It uses the Materialize styling library and pulls much of its information from two Pokemon-related
+                    APIs (<a href="https://pokeapi.co/">1</a>, <a href="https://pokemontcg.io/">2</a>).</p>
+                  <p>I was responsible for the Trivia page (functionality & style) and the functionality of the Cards
+                    page.</p>
+                  <a href="https://kalynbsimms.github.io/pokeProject/" class="btn btn-info">View App</a>
+                  <a href="https://github.com/Kalynbsimms/pokeProject" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
 
 
-               <!-- fourth card -->
-               <article class="card border-0">
+      <!-- third card -->
+      <article class="card border-0">
 
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample4">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingFour">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseFour"
-                                                  aria-expanded="true" aria-controls="collapseFour">
-                                                  <!-- card image-->
-                                                  <!-- Original image source: https://www.foodrepublic.com/wp-content/uploads/2012/03/033_FR11785.jpg -->
-                                                  
-                                                  <img src="./assets/images/burger.jpg"
-                                                       class="card-img-top folioimage" alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
-                                                  Burger App
-                                             </button>
-                                        </h2>
-                                   </header>
-                                   
-                                   <section id="collapseFour" class="collapse hide" aria-labelledby="headingFour"
-                                   data-parent="#accordionExample4">
-                                        <div class="card-body card-body-btm">
-                                             <p>Create a list of burgers you want to try and then mark each one off when you have devoured it.</p>
-                                             <a href="https://aqueous-castle-96874.herokuapp.com/" class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample3">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <!-- card image-->
+                    <img src="./assets/images/weatherApp.png" class="card-img-top folioimage"
+                      alt="Current weather and 5-day forecast for Corona, CA on August tenth, 2020.">
+                    Weather App
+                  </button>
+                </h2>
+              </header>
 
+              <section id="collapseThree" class="collapse hide" aria-labelledby="headingThree"
+                data-parent="#accordionExample3">
+                <div class="card-body card-body-btm">
+                  <p>This is a simple weather app built with HTML, CSS, and Javascript. It utilizes the Bootstrap
+                    styling library and OpenWeather API.</p>
+                  <p>It shows the current weather and 5-day forecast for a searched city. A search history of 9 cities
+                    is also available down the side.</p>
+                  <a href="https://patdowner.github.io/weatherApp/" class="btn btn-info">View App</a>
+                  <a href="https://github.com/PatDowner/weatherApp" class="btn btn-info">GitHub</a>
 
-               <!-- fifth card -->
-               <article class="card border-0">
-                    
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample5">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingFive">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseFive"
-                                                  aria-expanded="true" aria-controls="collapseFive">
-                                                  <!-- card image -->
-                                                  <img src="./assets/images/coview19.png"
-                                                  class="card-img-top folioimage" alt="Red virus with a darker red letter C on it.">
-                                                  COVIEW-19
-                                             </button>
-                                        </h2>
-                                   </header>
-
-                                   <section id="collapseFive" class="collapse hide" aria-labelledby="headingFive"
-                                        data-parent="#accordionExample5">
-                                        <div class="card-body card-body-btm">
-                                             <p>A full stack app that allows users to rate businesses on how well they conform with COVID-19 prevention guidelines.</p>
-                                             <p>This app was created in week 8 of my Coding Boot Camp. Built with HTML, JavaScript, CSS, Sequelize, and more.</p>
-                                             <p>I was mostly responsible for the front end, but assisted on the back end too.</p>
-                                             <a href="https://sleepy-forest-03534.herokuapp.com/home" class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
 
 
-               <!-- sixth card -->
-               <article class="card border-0">
+      <!-- fourth card -->
+      <article class="card border-0">
 
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample6">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingSix">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
-                                                  aria-controls="collapseSix">
-                                                  <!-- card image-->
-                                                  <img src="./assets/images/quiz.jpg"
-                                                  class="card-img-top folioimage" alt="Quiz screen. Header: high score 6 user p l d, current score 0, time left 83 seconds. Question: Which of the following HTML tags is self-closing? Answer choices: a. li, b. a, c. img, d. p">
-                                                  Multiple Choice Quiz
-                                             </button>
-                                        </h2>
-                                   </header>
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample4">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <!-- card image-->
+                    <!-- Original image source: https://www.foodrepublic.com/wp-content/uploads/2012/03/033_FR11785.jpg -->
 
-                                   <section id="collapseSix" class="collapse hide" aria-labelledby="headingSix"
-                                        data-parent="#accordionExample6">
-                                        <div class="card-body card-body-btm">
-                                             <p>A multiple choice quiz where you race against the clock for a high score. 90 seconds to answer as many questions as possible. A correct answer gains you a point. An incorrect answer costs you 10 seconds.</p>
-                                             <p>This app is built using HTML, JavaScript, and CSS. It utilizes the Bootstrap styling library. High Scores are stored on local storage as this was an assignment from before we had covered databases.</p>
-                                             <a href="https://patdowner.github.io/API_code_quiz/" class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
+                    <img src="./assets/images/burger.jpg" class="card-img-top folioimage"
+                      alt="Under construction badge. Circle with worker shoveling dirt encircled by the words under construction.">
+                    Burger App
+                  </button>
+                </h2>
+              </header>
+
+              <section id="collapseFour" class="collapse hide" aria-labelledby="headingFour"
+                data-parent="#accordionExample4">
+                <div class="card-body card-body-btm">
+                  <p>Create a list of burgers you want to try and then mark each one off when you have devoured it.</p>
+                  <a href="https://aqueous-castle-96874.herokuapp.com/" class="btn btn-info">View App</a>
+                  <a href="https://github.com/PatDowner/weatherApp" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
 
 
-               <!-- seventh card -->
-               <article class="card border-0">
+      <!-- fifth card -->
+      <article class="card border-0">
 
-                    <div class="card-body">
-                         <!-- start of accordion section -->
-                         <div class="accordion" id="accordionExample7">
-                              <div class="card border-info mb-0">
-                                   <header class="card-header" id="headingSeven">
-                                        <h2 class="mb-0">
-                                             <button class="btn btn-link btn-block text-center text-info" type="button"
-                                                  data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
-                                                  aria-controls="collapseSeven">
-                                                  <!-- card image-->
-                                                  <img src="./assets/images/employees.jpg"
-                                                  class="card-img-top folioimage" alt="My team. Cards for 4 employees showing employee name, role, I D number, email, and identifying information">
-                                                  Team Profile Generator
-                                             </button>
-                                        </h2>
-                                   </header>
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample5">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <!-- card image -->
+                    <img src="./assets/images/coview19.png" class="card-img-top folioimage"
+                      alt="Red virus with a darker red letter C on it.">
+                    COVIEW-19
+                  </button>
+                </h2>
+              </header>
 
-                                   <section id="collapseSeven" class="collapse hide" aria-labelledby="headingSeven"
-                                        data-parent="#accordionExample6">
-                                        <div class="card-body card-body-btm">
-                                             <p>A command-line interface app that generates an HTML file that contains a profile for all entered team members.</p>
-                                             <p>Click the button below to see the full code, or click <a href="https://drive.google.com/file/d/1XVkTNsr02XRTQ-HdJkr7iLfKr51FLtAF/view">here</a> for a video walk-through of the CLI interface.</p>
-                                             <a href="https://github.com/PatDowner/employeeSummary.git" class="btn btn-info">Check it out!</a>
-                                        </div>
-                                   </section>
-                              </div>
-                         </div>
-                    </div>
-               </article>
-               
+              <section id="collapseFive" class="collapse hide" aria-labelledby="headingFive"
+                data-parent="#accordionExample5">
+                <div class="card-body card-body-btm">
+                  <p>A full stack app that allows users to rate businesses on how well they conform with COVID-19
+                    prevention guidelines.</p>
+                  <p>This app was created in week 8 of my Coding Boot Camp. Built with HTML, JavaScript, CSS, Sequelize,
+                    and more.</p>
+                  <p>I was mostly responsible for the front end, but assisted on the back end too.</p>
+                  <a href="https://sleepy-forest-03534.herokuapp.com/home" class="btn btn-info">View App</a>
+                  <a href="https://github.com/mattjavier/coview-19" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
 
-          </section>
-          </main>
 
-          <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
-          <div id="bottom"></div>
+      <!-- sixth card -->
+      <article class="card border-0">
 
-          <!-- footer -->
-          <footer class="fixed-bottom bg-info text-light">
-               &copy; 2020
-          </footer>
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample6">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <!-- card image-->
+                    <img src="./assets/images/quiz.jpg" class="card-img-top folioimage"
+                      alt="Quiz screen. Header: high score 6 user p l d, current score 0, time left 83 seconds. Question: Which of the following HTML tags is self-closing? Answer choices: a. li, b. a, c. img, d. p">
+                    Multiple Choice Quiz
+                  </button>
+                </h2>
+              </header>
 
-          <!-- JavaScript plugins from Bootstrap -->
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-               integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-               crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-               integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-               crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-               integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-               crossorigin="anonymous"></script>
+              <section id="collapseSix" class="collapse hide" aria-labelledby="headingSix"
+                data-parent="#accordionExample6">
+                <div class="card-body card-body-btm">
+                  <p>A multiple choice quiz where you race against the clock for a high score. 90 seconds to answer as
+                    many questions as possible. A correct answer gains you a point. An incorrect answer costs you 10
+                    seconds.</p>
+                  <p>This app is built using HTML, JavaScript, and CSS. It utilizes the Bootstrap styling library. High
+                    Scores are stored on local storage as this was an assignment from before we had covered databases.
+                  </p>
+                  <a href="https://patdowner.github.io/API_code_quiz/" class="btn btn-info">View App</a>
+                  <a href="https://github.com/PatDowner/API_code_quiz" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- seventh card -->
+      <article class="card border-0">
+
+        <div class="card-body">
+          <!-- start of accordion section -->
+          <div class="accordion" id="accordionExample7">
+            <div class="card border-info mb-0">
+              <header class="card-header" id="headingSeven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center text-info" type="button" data-toggle="collapse"
+                    data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    <!-- card image-->
+                    <img src="./assets/images/employees.jpg" class="card-img-top folioimage"
+                      alt="My team. Cards for 4 employees showing employee name, role, I D number, email, and identifying information">
+                    Team Profile Generator
+                  </button>
+                </h2>
+              </header>
+
+              <section id="collapseSeven" class="collapse hide" aria-labelledby="headingSeven"
+                data-parent="#accordionExample6">
+                <div class="card-body card-body-btm">
+                  <p>A command-line interface app that generates an HTML file that contains a profile for all entered
+                    team members.</p>
+                  <a href="https://drive.google.com/file/d/1XVkTNsr02XRTQ-HdJkr7iLfKr51FLtAF/view" class="btn btn-info">View App</a>
+                  <a href="https://github.com/PatDowner/employeeSummary" class="btn btn-info">GitHub</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+    </section>
+  </main>
+
+  <!-- creates some extra whitespace at bottom to ensure nothing is hidden by footer -->
+  <div id="bottom"></div>
+
+  <!-- footer -->
+  <footer class="fixed-bottom bg-info text-light">
+    &copy; 2020
+  </footer>
+
+  <!-- JavaScript plugins from Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
